@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-07T12:03:51 IST" name="Introduction" finished-at="2023-07-07T12:03:51 IST" duration-ms="155">
+    <groups>
+      <group name="Smoke">
+        <method signature="ThridClass.operationMultiply()[pri:0, instance:test.ThridClass@644baf4a]" name="operationMultiply" class="test.ThridClass"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2023-07-07T12:03:51 IST" name="TestNGFramework1" finished-at="2023-07-07T12:03:51 IST" duration-ms="132">
+      <class name="test.ThridClass">
+        <test-method is-config="true" signature="beforeExecution()[pri:0, instance:test.ThridClass@644baf4a]" started-at="2023-07-07T12:03:51 IST" name="beforeExecution" finished-at="2023-07-07T12:03:51 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeExecution -->
+        <test-method is-config="true" signature="beforeClassExecution()[pri:0, instance:test.ThridClass@644baf4a]" started-at="2023-07-07T12:03:51 IST" name="beforeClassExecution" finished-at="2023-07-07T12:03:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClassExecution -->
+        <test-method signature="operationMultiply()[pri:0, instance:test.ThridClass@644baf4a]" started-at="2023-07-07T12:03:51 IST" name="operationMultiply" finished-at="2023-07-07T12:03:51 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- operationMultiply -->
+        <test-method signature="operationSubtract(java.lang.String,java.lang.String)[pri:0, instance:test.ThridClass@644baf4a]" started-at="2023-07-07T12:03:51 IST" name="operationSubtract" finished-at="2023-07-07T12:03:51 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[makemytrip.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[RS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- operationSubtract -->
+        <test-method signature="operationDivision()[pri:0, instance:test.ThridClass@644baf4a]" started-at="2023-07-07T12:03:51 IST" name="operationDivision" finished-at="2023-07-07T12:03:51 IST" depends-on-methods="test.ThridClass.operationSubtract, test.ThridClass.operationMultiply" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- operationDivision -->
+        <test-method is-config="true" signature="afterClassExecution()[pri:0, instance:test.ThridClass@644baf4a]" started-at="2023-07-07T12:03:51 IST" name="afterClassExecution" finished-at="2023-07-07T12:03:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClassExecution -->
+        <test-method is-config="true" signature="afterExecution()[pri:0, instance:test.ThridClass@644baf4a]" started-at="2023-07-07T12:03:51 IST" name="afterExecution" finished-at="2023-07-07T12:03:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterExecution -->
+      </class> <!-- test.ThridClass -->
+    </test> <!-- TestNGFramework1 -->
+    <test started-at="2023-07-07T12:03:51 IST" name="TestNGFramework" finished-at="2023-07-07T12:03:51 IST" duration-ms="155">
+      <class name="test.SampleTest">
+        <test-method is-config="true" signature="firstTest()[pri:0, instance:test.SampleTest@273e7444]" started-at="2023-07-07T12:03:51 IST" name="firstTest" finished-at="2023-07-07T12:03:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstTest -->
+        <test-method signature="secondTest()[pri:0, instance:test.SampleTest@273e7444]" started-at="2023-07-07T12:03:51 IST" name="secondTest" finished-at="2023-07-07T12:03:51 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondTest -->
+        <test-method is-config="true" signature="lastTest()[pri:0, instance:test.SampleTest@273e7444]" started-at="2023-07-07T12:03:51 IST" name="lastTest" finished-at="2023-07-07T12:03:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastTest -->
+      </class> <!-- test.SampleTest -->
+      <class name="test.HelloWorld">
+        <test-method is-config="true" signature="beforeMethodExecution()[pri:0, instance:test.HelloWorld@2ea41516]" started-at="2023-07-07T12:03:51 IST" name="beforeMethodExecution" finished-at="2023-07-07T12:03:51 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodExecution -->
+        <test-method signature="displayBirthDate()[pri:0, instance:test.HelloWorld@2ea41516]" started-at="2023-07-07T12:03:51 IST" name="displayBirthDate" finished-at="2023-07-07T12:03:51 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayBirthDate -->
+        <test-method is-config="true" signature="afterMethodExecution()[pri:0, instance:test.HelloWorld@2ea41516]" started-at="2023-07-07T12:03:51 IST" name="afterMethodExecution" finished-at="2023-07-07T12:03:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodExecution -->
+        <test-method is-config="true" signature="beforeMethodExecution()[pri:0, instance:test.HelloWorld@2ea41516]" started-at="2023-07-07T12:03:51 IST" name="beforeMethodExecution" finished-at="2023-07-07T12:03:51 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodExecution -->
+        <test-method signature="displayHelloWorld()[pri:0, instance:test.HelloWorld@2ea41516]" started-at="2023-07-07T12:03:51 IST" name="displayHelloWorld" finished-at="2023-07-07T12:03:51 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayHelloWorld -->
+        <test-method is-config="true" signature="afterMethodExecution()[pri:0, instance:test.HelloWorld@2ea41516]" started-at="2023-07-07T12:03:51 IST" name="afterMethodExecution" finished-at="2023-07-07T12:03:51 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodExecution -->
+        <test-method is-config="true" signature="beforeMethodExecution()[pri:0, instance:test.HelloWorld@2ea41516]" started-at="2023-07-07T12:03:51 IST" name="beforeMethodExecution" finished-at="2023-07-07T12:03:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodExecution -->
+        <test-method signature="displayName(java.lang.String)[pri:0, instance:test.HelloWorld@2ea41516]" started-at="2023-07-07T12:03:51 IST" name="displayName" finished-at="2023-07-07T12:03:51 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rahulshettyacademy.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayName -->
+        <test-method is-config="true" signature="afterMethodExecution()[pri:0, instance:test.HelloWorld@2ea41516]" started-at="2023-07-07T12:03:51 IST" name="afterMethodExecution" finished-at="2023-07-07T12:03:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodExecution -->
+      </class> <!-- test.HelloWorld -->
+      <class name="test.ThridClass">
+        <test-method is-config="true" signature="beforeClassExecution()[pri:0, instance:test.ThridClass@3f6f6701]" started-at="2023-07-07T12:03:51 IST" name="beforeClassExecution" finished-at="2023-07-07T12:03:51 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClassExecution -->
+        <test-method signature="method1()[pri:0, instance:test.ThridClass@3f6f6701]" started-at="2023-07-07T12:03:51 IST" name="method1" finished-at="2023-07-07T12:03:51 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method1 -->
+        <test-method signature="method2()[pri:0, instance:test.ThridClass@3f6f6701]" started-at="2023-07-07T12:03:51 IST" name="method2" finished-at="2023-07-07T12:03:51 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method2 -->
+        <test-method signature="method3()[pri:0, instance:test.ThridClass@3f6f6701]" started-at="2023-07-07T12:03:51 IST" name="method3" finished-at="2023-07-07T12:03:51 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method3 -->
+        <test-method is-config="true" signature="afterClassExecution()[pri:0, instance:test.ThridClass@3f6f6701]" started-at="2023-07-07T12:03:51 IST" name="afterClassExecution" finished-at="2023-07-07T12:03:51 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClassExecution -->
+      </class> <!-- test.ThridClass -->
+    </test> <!-- TestNGFramework -->
+  </suite> <!-- Introduction -->
+</testng-results>

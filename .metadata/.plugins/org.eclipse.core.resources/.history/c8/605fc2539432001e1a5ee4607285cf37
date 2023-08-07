@@ -1,0 +1,27 @@
+package BrowserStack;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class CrossBrowserTesting {
+
+	@Test
+	public void titleCheck() throws MalformedURLException {
+		
+		WebDriver driver = new RemoteWebDriver(new URL("https://hub.browserstack.com/wd/hub"), null);
+		//System.setProperty("webdriver.chrome.driver", "C:/Selenium/Driver/chromedriver_win32/chromedriver.exe");
+		//WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://rahulshettyacademy.com/");
+		//System.out.println(driver.getTitle());
+		Assert.assertTrue(driver.getTitle().matches("Selenium, API Testing, Software Testing & More QA Tutorials | Rahul Shetty Academy"));
+		
+	}
+	
+}

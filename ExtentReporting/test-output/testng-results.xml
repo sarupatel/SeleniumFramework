@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-13T12:06:22 IST" name="Default suite" finished-at="2023-07-13T12:06:29 IST" duration-ms="6912">
+    <groups>
+    </groups>
+    <test started-at="2023-07-13T12:06:22 IST" name="Default test" finished-at="2023-07-13T12:06:29 IST" duration-ms="6912">
+      <class name="learning.ExtentReporting.ExtentReportDemo">
+        <test-method is-config="true" signature="reportConfig()[pri:0, instance:learning.ExtentReporting.ExtentReportDemo@2a265ea9]" started-at="2023-07-13T12:06:22 IST" name="reportConfig" finished-at="2023-07-13T12:06:22 IST" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportConfig -->
+        <test-method signature="initialDemo()[pri:0, instance:learning.ExtentReporting.ExtentReportDemo@2a265ea9]" started-at="2023-07-13T12:06:22 IST" name="initialDemo" finished-at="2023-07-13T12:06:29 IST" duration-ms="6475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialDemo -->
+      </class> <!-- learning.ExtentReporting.ExtentReportDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

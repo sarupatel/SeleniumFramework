@@ -1,0 +1,27 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class JdbcConnection {
+
+	public static void main(String[] args) throws SQLException {
+		
+		//"jdbc:mysql://"+host+":"+port+"/database";
+		//jdbc:mysql://localhost:3306/demo;
+		String host="localhost";
+		String port="3306";
+		
+		Connection connect = DriverManager.getConnection("jdbc:mysql://"+host+":"+port+"/demo", "root", "Admin$11");
+		Statement s = connect.createStatement();
+		ResultSet results = s.executeQuery("select * from credentials where scenario='outstbalancecard'");
+		//String username = results.getString("username");
+		//String password = results.getString("password");
+		
+		//System.out.println("Username: "+username+" & Password: "+password+" for outstbalancecard scenario");
+		System.out.println("Username: "+results.getString("username")+" & Password: "+results.getString("password")+" for outstbalancecard scenario");
+		
+	}
+
+}

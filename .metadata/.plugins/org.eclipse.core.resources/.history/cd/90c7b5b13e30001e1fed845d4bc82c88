@@ -1,0 +1,12 @@
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class JdbcConnection {
+
+	public static void main(String[] args) throws SQLException {
+		
+		//"jdbc:mysql://"+host+":"+port+"/database";
+		DriverManager.getConnection(null, "root", "Admin$11");
+	}
+
+}

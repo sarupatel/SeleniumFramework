@@ -1,0 +1,32 @@
+import java.io.File;
+import java.io.IOException;
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class FileUpload {
+
+	public static void main(String[] args) throws InterruptedException, IOException{
+		System.setProperty("webdriver.chrome.driver", "C:/Selenium/Driver/chromedriver_win32/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.sodapdf.com/txt-to-pdf");
+		driver.findElement(By.cssSelector(".btn-choose")).click();
+		Thread.sleep(3000);
+		//To execute command mentioned in AutoIT to upload File
+		Runtime.getRuntime().exec("C:/Selenium/data/fileUpload.exe");
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(10));
+		w.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.partialLinkText("Download file")));
+	
+		//Below code is fine on individual machine but when integrated with Jenkins its difficult.
+		File f = new File("C:/Users/erhir/Downloads/sodapdf-converted.pdf");
+		if(f.exists()) {
+			System.out.println("File found");
+		}
+	}
+
+}

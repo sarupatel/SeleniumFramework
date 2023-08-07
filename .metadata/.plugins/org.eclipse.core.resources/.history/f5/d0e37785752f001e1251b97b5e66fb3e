@@ -1,0 +1,17 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class JavaLogsConsole {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:/Selenium/Driver/chromedriver_win32/chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		
+		driver.get("https://rahulshettyacademy.com/angularAppdemo/");
+		driver.findElement(By.linkText("Browse Products")).click();
+		driver.findElement(By.partialLinkText("Selenium")).click();
+		driver.findElement(By.cssSelector(".add-to-cart")).click();
+		
+	}
+
+}

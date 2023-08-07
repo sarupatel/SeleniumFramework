@@ -1,0 +1,16 @@
+userName: saritapatel_KaCYrd
+accessKey: 4y8xWHwb8WjyqhgdNcDs
+framework: testng
+platforms:
+  - os: Windows
+    osVersion: 10
+    browserName: Edge
+    browserVersion: 114.0
+  - os: Windows
+    osVersion: 11
+    browserName: Firefox
+    browserVersion: 114.0
+  - os: OS X
+    osVersion: Monterey
+    browserName: Chrome
+    browserVersion: 113.0

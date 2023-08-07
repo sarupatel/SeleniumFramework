@@ -1,0 +1,25 @@
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FileUpload {
+
+	public static void main(String[] args) throws InterruptedException, IOException{
+		System.setProperty("webdriver.chrome.driver", "C:/Selenium/Driver/chromedriver_win32/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		//driver.get("https://www.sodapdf.com/txt-to-pdf");
+		//driver.findElement(By.cssSelector(".btn-choose")).click();
+		driver.get("https://the-internet.herokuapp.com/");
+		driver.findElement(By.linkText("File Upload")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.cssSelector("input#file-upload")).click();
+		Thread.sleep(3000);
+		//To execute command mentioned in AutoIT to upload File
+		Runtime.getRuntime().exec("C:/Selenium/data/fileUpload.exe");
+
+	}
+
+}

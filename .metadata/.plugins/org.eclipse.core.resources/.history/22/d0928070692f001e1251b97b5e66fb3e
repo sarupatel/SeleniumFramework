@@ -1,0 +1,26 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.DevTools;
+import org.openqa.selenium.devtools.v112.network.Network;
+
+public class BlockRequest {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:/Selenium/Driver/chromedriver_win32/chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		DevTools devTools = driver.getDevTools();
+		devTools.createSession();
+		
+		devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
+		List<String> urls = Arrays.asList("*.jpg");
+		devTools.send(Network.setBlockedURLs(urls));
+		
+		driver.get("https://rahulshettyacademy.com/angularAppdemo/");
+		driver.findElement(By.cssSelector("button[routerlink*='library']")).click();
+	}
+
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Introduction" parallel="tests" thread-count="2">
+<listeners>
+	<listener class-name="test.Listeners"/>
+</listeners>
+<parameter name="URL" value="rahulshettyacademy.com"/>
+  <test thread-count="5" name="TestNGFramework">
+    <classes>
+      <class name="test.HelloWorld">
+      	<methods>
+      		<include name="display.*"/>
+      	</methods>
+      </class>
+      <class name="test.SampleTest"/>
+      <class name="test.ThridClass">
+      	<methods>
+      		<include name = "method.*"/>
+      	</methods>
+      </class>      
+    </classes>
+  </test>
+    <test parallel="classes" thread-count="2" name="TestNGFramework1">
+    <parameter name="URL" value="makemytrip.com"/>
+    <parameter name="Username/ID" value="RS"/>
+    <classes>
+      <class name="test.ThridClass">
+      	<methods>
+      		<exclude name = "method.*"/>
+      	</methods>
+      </class>
+    </classes>
+  </test> 
+</suite> 
